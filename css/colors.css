@@ -1,0 +1,35 @@
+:root {
+  /* Foregrounds */
+	/* Whites  */
+	--fc-w0: #FFFFFF;
+	--fc-w1: #FEFEFE;
+	--fc-w2: #EFEFEF;
+	/* Grays   */
+	--fc-g0: #000000;
+	--fc-g1: #101010;
+	--fc-g2: #010101;
+	--fc-g3: #111111;
+	--fc-g4: #222222;
+	--fc-g5: #333333;
+	/* Pastels */
+	--fc-0: #AA4444;
+	--fc-1: #44AA44;
+	--fc-2: #4444AA;
+	--fc-3: #777722;
+	--fc-4: #772277;
+	--fc-5: #227777;
+  /* Backgrounds */
+	/* Whites  */
+	--bc-w0: #DDDDDD;
+	--bc-w1: #DDDDBB;
+	--bc-w2: #BBDDBB;
+	/* Grays   */
+	--bc-0: #000000;
+	--bc-1: #101010;
+	--bc-2: #010101;
+	--bc-3: #111111;
+	--bc-4: #222222;
+	--bc-5: #333333;
+  /* Transparent */
+	--tc-0: rgba(10,10,10,0.9);
+}
