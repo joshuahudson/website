@@ -155,39 +155,78 @@
 				"
 				 >
 			</polygon> 
-			<g id="raindrop" viewBox="-1,-2,2,5"> 
-				<use opacity="0.5" fill="#778899" fill-opacity="1" xlink:href="#path-4" stroke="#9999aa" stroke-width="0.1" stroke-opacity="0.8"/>
-			</g>
-			<g id="raindrops" viewBox="0,-2,14,26">
-				<use transform="		translate(0,	0)	scale(3)" xlink:href="#raindrop">
-				<use transform="scale(0.33)	translate(10,	-1)	scale(2)" xlink:href="#raindrop">
-				<use transform="scale(.5)	translate(4,	9)	scale(3)" xlink:href="#raindrop">
-				<use transform="scale(.33)	translate(-11,	4)	scale(2)" xlink:href="#raindrop">
-				<use transform="scale(0.5)	translate(3,	-7)	scale(1)" xlink:href="#raindrop">
-			</g>
-			<g id="lot_of_raindrops">
-				<use transform="		translate(0,	0)	scale(3)" xlink:href="#raindrops">
-				<use transform="scale(0.33)	translate(50,	-10)	scale(2)" xlink:href="#raindrops">
-				<use transform="scale(.5)	translate(0,	50)	scale(3)" xlink:href="#raindrops">
-				<use transform="scale(.33)	translate(-60,	15)	scale(2)" xlink:href="#raindrops">
-				<use transform="scale(0.5)	translate(30,	-20)	scale(1)" xlink:href="#raindrops">
-			</g>
-			<g id="lots_of_raindrops">
-				<use transform="		translate(0,	0)	scale(1)" xlink:href="#lot_of_raindrops">
-				<use transform="scale(1)	translate(100,	0)	scale(1)" xlink:href="#lot_of_raindrops">
-				<use transform="scale(1)	translate(0,	100)	scale(1)" xlink:href="#lot_of_raindrops">
-				<use transform="scale(1)	translate(-100,	0)	scale(1)" xlink:href="#lot_of_raindrops">
-				<use transform="scale(1)	translate(50,	-50)	scale(1)" xlink:href="#lot_of_raindrops">
-			</g>
-			<pattern id="pattern_raindrop" viewBox="-1,-2,2,5" width="10%" height="10%">
+			<svg id="raindrop" width="2" height="5" viewBox="0,0,2,5"> 
+				<use x="1" y="2" width="2" height="5" opacity="1" fill="#778899" fill-opacity="1" xlink:href="#path-4" stroke="#9999aa" stroke-width="0.1" stroke-opacity="0.8">
+			</svg>
+			<svg id="raindrops" width="15" height="15" viewBox="0,0,15,15">
+				<!-- Left and Right Drop -->
+				<g x="0" y="0">
+					<use x="-1" y="2" width="2" height="5" xlink:href="#raindrop">
+					<animate attributeName="y" from="2" to="17" dur="200ms" repeatCount="indefinite"/>
+				</g>
+				<g x="0" y="0">
+					<use x="14" y="2" width="2" height="5" xlink:href="#raindrop">
+					<animate attributeName="y" from="2" to="17" dur="200ms" repeatCount="indefinite"/>
+				</g>
+				<g x="0" y="0">
+					<use x="-1" y="2" width="2" height="5" xlink:href="#raindrop">
+					<animate attributeName="y" from="-13" to="2" dur="200ms" repeatCount="indefinite"/>
+				</g>
+				<g x="0" y="0">
+					<use x="14" y="2" width="2" height="5" xlink:href="#raindrop">
+					<animate attributeName="y" from="-13" to="2" dur="200ms" repeatCount="indefinite"/>
+				</g>
+
+				<!-- Middle Drop -->
+				<g x="0" y="0">
+					<use x="8" y="-3" width="2" height="5" xlink:href="#raindrop">
+					<animate attributeName="y" from="-3" to="12" dur="300ms" repeatCount="indefinite"/>
+				</g>
+				<g x="0" y="0">
+					<use x="8" y="12" width="2" height="5" xlink:href="#raindrop">
+					<animate attributeName="y" from="12" to="27" dur="300ms" repeatCount="indefinite"/>
+				</g>
+				<g x="0" y="0">
+					<use x="8" y="-3" width="2" height="5" xlink:href="#raindrop">
+					<animate attributeName="y" from="-18" to="-3" dur="300ms" repeatCount="indefinite"/>
+				</g>
+
+				<!-- Middle Right Drop -->
+				<g x="0" y="0">
+					<use x="10" y="4" width="2" height="5" xlink:href="#raindrop">
+					<animate attributeName="y" from="4" to="19" dur="400ms" repeatCount="indefinite"/>
+				</g>
+				<g x="0" y="0">
+					<use x="10" y="4" width="2" height="5" xlink:href="#raindrop">
+					<animate attributeName="y" from="-11" to="4" dur="400ms" repeatCount="indefinite"/>
+				</g>
+
+				<!-- Middle Left Drop -->
+				<g x="0" y="0">
+					<use x="4" y="9" width="2" height="5" xlink:href="#raindrop">
+					<animate attributeName="y" from="9" to="24" dur="500ms" repeatCount="indefinite"/>
+				</g>
+				<g x="0" y="0">
+					<use x="4" y="9" width="2" height="5" xlink:href="#raindrop">
+					<animate attributeName="y" from="-6" to="9" dur="500ms" repeatCount="indefinite"/>
+				</g>
+			</svg>
+			<pattern id="pattern_raindrop" viewBox="0,0,2,5" width="2%" height="2%">
 				<use  xlink:href="#raindrop">
 			</pattern>
-			<pattern id="pattern_raindrops" viewBox="-20,-15,125,115" width="25%" height="23%">
-				<use  xlink:href="#lot_of_raindrops">
+			<pattern id="pattern_raindrops" viewBox="0,0,15,15" width="10%" height="10%">
+				<g>
+				<use xlink:href="#raindrops">
+				<animate attributeName="x" from="0" to="15" dur="2s" repeatCount="indefinite"/>
+				</g>
+				<g>
+				<use xlink:href="#raindrops">
+				<animate attributeName="x" from="-15" to="0" dur="2s" repeatCount="indefinite"/>
+				</g>
 			</pattern>
 			<pattern id="pattern_lots_of_raindrops" viewBox="0,0,100,100" width="50%" height="50%">
 				<rect x="0" y="0" width="100" height="100" fill="url(#pattern_raindrops)"/>
-				<rect x="-25" y="-25" width="125" height="125" fill="url(#pattern_raindrops)"/>
+				<rect x="0" y="-15" width="125" height="125" fill="url(#pattern_raindrops)"/>
 			</pattern>
 			<pattern id="pattern_lots_and_lots_of_raindrops" viewBox="0,0,200,200" width="20%" height="20%">
 				<rect x="0" y="0" width="200" height="200" fill="url(#pattern_lots_of_raindrops)"/>
@@ -263,16 +302,14 @@
 <div class="parallax bac"> 
 	<img class="parallax" src="images/Stones_1.jpg"> 
 
-	<svg class="parallax" viewBox="0 0 1828.8 1219.2" style="background-color:transparent;" preserveAspectRatio="xMidYMid slice">
-			<rect x="0" y="0" width="2000" opacity="0.25" height="2000" fill="url(#pattern_raindrops)"/>
+	<svg class="parallax" viewBox="0 0 1828.8 1219.2" style="background-color:transparent;">
+		<rect x="-100" y="-200" width="2000" opacity=".2" height="2000" fill="url(#pattern_raindrops)"/>
 	</svg>
 </div>
 
 <div class="mid" style="position:absolute; top:0%; left:0%; height:200%; width:100%;">
-	<svg style="height: 100%; width:100%; background-color:transparent;" viewBox="0 0 1950 1950" preserveAspectRatio="xMidYMid slice">
-		<g> 
-			<rect x="-50" y="-50" width="2000" opacity="0.2" height="2000" fill="url(#pattern_raindrops)"/>
-		</g>
+	<svg style="height: 100%; width:100%; background-color:transparent;" viewBox="0 0 1950 1950">
+		<rect x="0" y="-200" width="3000" opacity=".2" height="3000" fill="url(#pattern_raindrops)"/>
 	</svg>
 </div>
 
@@ -317,7 +354,10 @@
 				</text> 
 			</a>	
 		-->
+			<!--
 			<a id="a8927" style="display:inline" xlink:href="cv" alt="CV">
+			-->
+			<a id="a8927" style="display:inline" xlink:href="https://orcid.org/0000-0003-2764-4538" alt="CV">
 				<g id="CV">
 				<use fill="url(#radialGradient8892)" fill-opacity="0.7" stroke="none" xlink:href="#path-2" />
 				</g>
@@ -379,6 +419,8 @@
 		<a href=reference/index.html>htmlref</a>
 	</p>
 </div>
+
 </body>
+
 </html>
 
