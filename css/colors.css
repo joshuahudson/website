@@ -1,9 +1,34 @@
 :root {
+  /* 
+    	Light color scheme 
+  */
+	--ds-for:	#973;
+	--ds-bac:	#777;
+	--ds-par:	#EDC;
+	--nav-for: 	#655;
+	--nav-bac: 	#EEC;
+	--nav-bac-sel: 	#111;
+  /* */
+  /* 
+   	Dark color scheme 
+	--ds-for:	#941;
+	--ds-bac:	#777;
+	--ds-par:	#EDC;
+  
+	--nav-for: 	#BB8;
+	--nav-bac: 	#1A1815;
+	--nav-bac-sel: 	#000;
+  /* */
   /* Foregrounds */
 	/* Whites  */
 	--fc-w0: #FFFFFF;
 	--fc-w1: #FEFEFE;
 	--fc-w2: #EFEFEF;
+  	--fc-w3: #CCBBBB;
+  	--fc-w4: #BBBBBB;
+  	--fc-w5: #AABBBB;
+  	--fc-w6: #AABBAA;
+  	--fc-w7: #AA9999;
 	/* Grays   */
 	--fc-g0: #000000;
 	--fc-g1: #101010;
@@ -18,6 +43,7 @@
 	--fc-3: #777722;
 	--fc-4: #772277;
 	--fc-5: #227777;
+  	--fc-6: #DD3929;
   /* Backgrounds */
 	/* Whites  */
 	--bc-w0: #DDDDDD;
@@ -31,5 +57,5 @@
 	--bc-4: #222222;
 	--bc-5: #333333;
   /* Transparent */
-	--tc-0: rgba(10,10,10,0.9);
+	--tc-0: rgba(1.0,1.0,1.0,0.9);
 }
